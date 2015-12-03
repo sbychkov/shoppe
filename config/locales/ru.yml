@@ -55,8 +55,9 @@ ru:
         delivery_name: Имя получателя
         delivery_service_id: Способ доставки
         delivery_postcode: Индекс адреса доставки
-        email_address: Электропочта
+        email_address: Электронная почта
         first_name: Имя
+        middle_name: Отчество
         last_name: Фамилия
         phone_number: Телефонный номер
         status: Статус
@@ -106,7 +107,7 @@ ru:
         name: Наименование
         rate: Размер налога
       shoppe/user:
-        email_address: Электропочта
+        email_address: Электронная почта
         first_name: Имя
         last_name: Фамилия
         password: Пароль
@@ -348,7 +349,7 @@ ru:
       delivery_address: Адрес доставки
       delivery_name: Имя получателя
       edit_order: Редактировать заказ
-      email_address: Электропочта
+      email_address: Электронная почта
       first_name: Имя
       from_payment: по платежу
       id: ID
@@ -563,7 +564,7 @@ ru:
       create_alert: The email address and/or password you have entered is invalid. Please check and try again.
       create_alert: Электронная почта или пароль не правильный. Пожалуйста, попробуйте снова.
       back_to_login: Назад к странице входа
-      email: Электропочта
+      email: Электронная почта
       login: Логин
       password: Пароль
       reset: Сбросить
@@ -614,7 +615,7 @@ ru:
       delete_confirmation:  Вы уверены, что хотите удалить этого пользователя?
       demo_mode_error: Вы не можете редактировать пользоватей в демо режиме.
       destroy_notice: Пользователь успешно удален
-      email: Электропочта
+      email: Электронная почта
       first_name: Имя
       last_name: Фамилия
       login: Логин
@@ -690,7 +691,7 @@ ru:
       search_customer: Поиск клиента
       name: Имя
       company: Компания
-      email: Электропочта
+      email: Электронная почта
       phone: Телефон
       mobile_phone: Мобильный телефон
       no_customers: Нет клиентов для отображения
@@ -702,6 +703,7 @@ ru:
       customer_information: Информация о клиенте
       cancel: Отмена
       first_name: Имя
+      middle_name: Отчество
       last_name: Фамилия
       delete: Удалить
       save: Сохранить
@@ -743,7 +745,7 @@ ru:
 
       labels:
         # Labels for fields go here
-        email_address: Электропочта магазина
+        email_address: Электронная почта магазина
         store_name: Название магазина
         currency_unit: Знак валюты
         tax_name: Наименование налога

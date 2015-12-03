@@ -29,11 +29,11 @@ module Shoppe
     #
     # @return [String]
     def full_name
-      "#{first_name} #{last_name}"
+      "#{first_name} #{middle_name} #{last_name}"
     end
 
     def self.ransackable_attributes(auth_object = nil)
-      ["id", "first_name", "last_name", "company", "email", "phone", "mobile"] + _ransackers.keys
+      ["id", "first_name", "middle_name","last_name", "company", "email", "phone", "mobile"] + _ransackers.keys
     end
 
     def self.ransackable_associations(auth_object = nil)
