@@ -1,5 +1,5 @@
-require "roo"
-require "globalize"
+require 'roo'
+require 'globalize'
 
 module Shoppe
   class Product < ActiveRecord::Base
@@ -10,8 +10,11 @@ module Shoppe
     require_dependency 'shoppe/product/product_attributes'
     require_dependency 'shoppe/product/variants'
 
+    attr_accessor product_attributes
+    attr_accessor product_variants
+
     # Attachments for this product
-    has_many :attachments, as: :parent, dependent: :destroy, autosave: true, class_name: "Shoppe::Attachment"
+    has_many :attachments, as: :parent, dependent: :destroy, autosave: true, class_name: 'Shoppe::Attachment'
 
     # The product's categorizations
     #
@@ -25,7 +28,7 @@ module Shoppe
     # The product's tax rate
     #
     # @return [Shoppe::TaxRate]
-    belongs_to :tax_rate, class_name: "Shoppe::TaxRate"
+    belongs_to :tax_rate, class_name: 'Shoppe::TaxRate'
 
     # Ordered items which are associated with this product
     has_many :order_items, dependent: :restrict_with_exception, class_name: 'Shoppe::OrderItem', as: :ordered_item
@@ -122,6 +125,7 @@ module Shoppe
     end
 
     # Set attachment for the default_image role
+    # @param [ActionDispatch::Http::UploadedFile] file
     def default_image_file=(file)
       self.attachments.build(file: file, role: 'default_image')
     end
